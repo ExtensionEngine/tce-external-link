@@ -63,8 +63,12 @@ export default {
   font-size: 16px;
 
   .title {
-    font-weight: 400;
     margin-bottom: 10px;
+    font-weight: 400;
+  }
+
+  .title, a {
+    overflow-wrap: break-word;
   }
 
   a {
