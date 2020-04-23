@@ -4,8 +4,8 @@
       <div class="row">
         <div :class="{ 'has-error': vErrors.has('title') }" class="col-xs-6">
           <input
-            v-validate="{ required: true, min: 1, max: 500 }"
             v-model.trim="title"
+            v-validate="{ required: true, min: 1, max: 500 }"
             :disabled="!edit"
             class="form-control"
             name="title"
@@ -17,8 +17,8 @@
         </div>
         <div :class="{ 'has-error': vErrors.has('url') }" class="col-xs-6">
           <input
-            v-validate="{ required: true, url: true, min: 1, max: 500 }"
             v-model.trim="url"
+            v-validate="{ required: true, url: true, min: 1, max: 500 }"
             :disabled="!edit"
             class="form-control"
             name="url"

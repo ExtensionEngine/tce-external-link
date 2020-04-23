@@ -1,6 +1,6 @@
+import * as yup from 'yup';
 import Edit from './edit';
 import Toolbar from './edit/Toolbar';
-import yup from 'yup';
 
 const schema = {
   title: yup.string().trim().min(1).max(500).required(),
